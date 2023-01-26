@@ -7,6 +7,7 @@ function getComputerChoice() {
 
 //Making a function that play single round of Rock Paper Scissor
 function playRound(playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
     if(playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors") {
         return "Invalid selection. Please choose rock, paper or scissors";
     }
@@ -39,5 +40,5 @@ function playRound(playerSelection, computerSelection) {
 // Using prompt function to get input from user
 const playerSelection = prompt("Please select either rock, paper or scissors.");
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+alert(playRound(playerSelection, computerSelection));
 
