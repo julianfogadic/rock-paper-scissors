@@ -1,0 +1,90 @@
+//prva vježba
+/*document.getElementById("tekst2").innerHTML = "Ovo je tekst ubacen iz JavaScripta";
+//druga vježba
+let autor = "Julian";
+pozoviAutora();
+function mojaFunkcija() {
+    document.getElementById("demo1").innerHTML = "Paragraf promijenjen.";
+    document.getElementById("demo1").style.color = "red";
+    document.getElementById("demo1").style.fontSize = "30px";
+    document.getElementById("demo1").style.fontFamily = "Verdana";
+    document.getElementById("demo1").style.textAlign = "center";
+};
+
+document.getElementById("btnZbroji").addEventListener("click", izracunaj2);
+document.getElementById("btnOduzmi").addEventListener("click", izracunaj3);
+document.getElementById("btnPomnozi").addEventListener("click", izracunaj4);
+document.getElementById("btnPodijeli").addEventListener("click", izracunaj5);
+
+document.getElementById("promijeni").addEventListener("click", izracunaj);
+
+
+function izracunaj() {
+    let Broj1 = parseInt(document.getElementById("Broj1").innerHTML);
+    let Broj2 = parseInt(document.getElementById("Broj2").innerHTML);
+    let rezultat = Broj1 + Broj2;
+    document.getElementById("rezultat").innerHTML = rezultat;
+}
+
+function izracunaj2() {
+    let brojx = parseInt(document.getElementById("brojx").value);
+    let brojy = parseInt(document.getElementById("brojy").value);
+    let zbroj = brojx + brojy;
+    document.getElementById("zbroj").innerHTML = zbroj;
+};
+
+function izracunaj3() {
+    let brojx = parseInt(document.getElementById("brojx").value);
+    let brojy = parseInt(document.getElementById("brojy").value);
+    let razlika = brojx - brojy;
+    document.getElementById("razlika").innerHTML = razlika;
+};
+
+function izracunaj4() {
+    let brojx = parseInt(document.getElementById("brojx").value);
+    let brojy = parseInt(document.getElementById("brojy").value);
+    let umnozak = brojx * brojy;
+    document.getElementById("umnozak").innerHTML = umnozak;
+};
+
+function izracunaj5() {
+    let brojx = parseInt(document.getElementById("brojx").value);
+    let brojy = parseInt(document.getElementById("brojy").value);
+    let kolicnik = brojx / brojy;
+    document.getElementById("kolicnik").innerHTML = kolicnik;
+};
+
+
+function pozoviAutora() {
+    document.getElementById("autor").innerHTML = "Autor ove stranice je: " + autor;
+};
+
+setTimeout(() => {
+    const box = document.getElementById("autor");
+    box.style.display = 'none';
+}, 5000);
+
+const hiddenElement = document.getElementById("tekst2");
+hiddenElement.style.display = 'none';
+setTimeout(() => {
+    hiddenElement.style.display = "block";
+}, 6000);
+
+let scrollCount = 0;
+function scrollFunction() {
+    let stickyParagraph = document.getElementById("sticky-paragraph");
+    stickyParagraph.style.display = "block";
+    scrollCount++;
+    stickyParagraph.innerHTML = "You have scrolled " + scrollCount + " times";
+}
+
+function prikaziVrijeme() {
+    let d = new Date();
+    document.getElementById("sat").innerHTML =
+        d.getHours() + ":" +
+        d.getMinutes() + ":" +
+        d.getSeconds();
+}
+prikaziVrijeme();
+setInterval(prikaziVrijeme, 1000);
+*/

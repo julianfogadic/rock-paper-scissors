@@ -1,0 +1,9 @@
+ <style>
+        #sticky-paragraph {
+            position: fixed;
+            background-color: grey;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>

@@ -1,0 +1,74 @@
+﻿body {
+    background-image: url("https://external-preview.redd.it/vXXpwgjQWD8Ftx73q29dnpeFNjeyiEvcqRUEVGTIWdY.png?auto=webp&s=c6a39e15c09d2eef3f81a4ee50b2d5ab17ef0b27");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 75px;
+}
+
+.korisnici {
+    text-align: center;
+    font-size: 30px;
+    padding:15px;
+}
+
+#izaberi, #bacanje {
+    font-size: 24px;
+    text-align: center;
+}
+
+#pobjednik {
+    text-align: center;
+
+}
+
+#igra {
+    font-size: 18px;
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+}
+
+#pobjednik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    place-self: center;
+    padding: 20px;
+}
+
+#igrac1 {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+
+#submitBtn {
+    width: 70px;
+    align-self: center;
+}
+
+#racunalo {
+    display: flex;
+    flex-direction: column;
+    border:solid;
+}
+

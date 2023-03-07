@@ -1,0 +1,57 @@
+   <!-- <p id="sticky-paragraph">Sticky paragraph</p>
+    <h2>Žarulja u akciji!</h2>
+
+    <p>Isprobaj upaliti i ugasiti žarulju.</p>
+
+    <button onclick="document.getElementById('mojaSlika').src='lights-on.jpg'">Ukljuci zarulju.</button>
+
+    <img id="mojaSlika" src="light-off.jpg" style="width:100px">
+
+    <button onclick="document.getElementById('mojaSlika').src='light-off.jpg'">Iskljuci zarulju.</button>
+
+    <hr />
+
+    <p id="tekst">JavaScript nam mijenja stilove.</p>
+    <button type="button" onclick="document.getElementById('tekst').style.fontSize = '16px'">Smanji me!</button>
+    <button type="button" onclick="document.getElementById('tekst').style.fontSize='35px'">Povećaj me!</button>
+    <hr />
+
+    <p id="tekst2"></p>
+    <hr />
+
+    <p id="hidden">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="document.getElementById('hidden').style.display='none'">Sakrij me!</button>
+    <p id="pokazi" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('pokazi').style.display='block'">Pokaži me!</button>
+    <hr />
+
+    <p id="demo1">Paragraf</p>
+    <button type="button" onclick="mojaFunkcija()">Promijeni</button>
+    <hr />
+
+    <p id="rezultat">Vjezbamo varijable.</p>
+    <p id="Broj1">3</p>
+    <p id="Broj2">4</p>
+    <button id="promijeni" type="button">Promijeni</button>
+    <hr />
+
+    <label for="brojx">Broj X:</label>
+    <input type="number" id="brojx" brojx="brojx"><br><br>
+    <label for="brojy">Broj Y:</label>
+    <input type="number" id="brojy" brojy="brojy"><br><br>
+    <button id="btnZbroji" type="button">Zbroji</button>
+    <button id="btnOduzmi" type="button">Oduzmi</button>
+    <button id="btnPomnozi" type="button">Pomnoži</button>
+    <button id="btnPodijeli" type="button">Podijeli</button>
+    <p>Zbroj:<span id="zbroj"></span></p>
+    <p>Razlika:<span id="razlika"></span></p>
+    <p>Umnožak:<span id="umnozak"></span></p>
+    <p>Količnik:<span id="kolicnik"></span></p>
+    <hr />
+
+    <p id="autor">assasd</p>
+    <hr />
+    <p id="sat"></p>
+    <hr />-->
