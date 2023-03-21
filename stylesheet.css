@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url("https://external-preview.redd.it/vXXpwgjQWD8Ftx73q29dnpeFNjeyiEvcqRUEVGTIWdY.png?auto=webp&s=c6a39e15c09d2eef3f81a4ee50b2d5ab17ef0b27");
+    background-image: url("background.jpg");
     background-size: cover;
 }
 
@@ -59,6 +59,7 @@ img {
     display: flex;
     flex-direction: column;
     border: solid;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 #submitBtn {
@@ -70,5 +71,6 @@ img {
     display: flex;
     flex-direction: column;
     border:solid;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
