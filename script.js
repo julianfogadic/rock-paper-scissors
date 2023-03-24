@@ -30,6 +30,10 @@ const imgEl = document.getElementById("slike");
 
 document.getElementById("submitBtn").innerHTML = "Igraj";
 
+let userWins = 0;
+let computerWins = 0;
+let round = 1;
+
 izborKorisnikEl.addEventListener("change", function () {
     const selectedValue = izborKorisnikEl.value;
     if (selectedValue === "Kamen") {
@@ -40,6 +44,7 @@ izborKorisnikEl.addEventListener("change", function () {
         imgEl.src = "papir.png"
     }
 });
+
 const izborRacunalo = random();
 bacanjeEl.textContent = `Racunalo baca: ${izborRacunalo}`;
 const racunaloImageEl = document.getElementById("racunalo-image");
@@ -67,10 +72,35 @@ submitBtn.addEventListener("click", function () {
     }
 
     pobjednikImageEl.style.display = "block";
+
+    numRounds++;
+    const winner = pobjednik(izborKorisnik, izborRacunalo);
+    if (winner === "Korisnik") {
+        userWins++;
+    } else if (winner === "Racunalo") {
+        computerWins++;
+    }
+    const rundaEl = document.getElementById("runda");
+    rundaEl.textContent = `Runda ${numRounds}: ${winner} wins!`;
+
+    if (numRounds === 3) {
+        // Display the winner of the game
+        let gameWinner;
+        if (userScore > computerScore) {
+            gameWinner = "Korisnik";
+        } else if (computerScore > userScore) {
+            gameWinner = "Racunalo";
+        } else {
+            gameWinner = "Nerijeseno";
+        }
+        pobjednikEl.textContent = `Game over! ${gameWinner} wins the game!`;
+
+        // Disable the submit button
+        submitBtn.disabled = true;
+    }
+
 });
 
-
-
 let selectElement = document.getElementById("igra");
-selectElement.value = izborKorisnik;
+selectElement.value = izborKorisnikEl;
 

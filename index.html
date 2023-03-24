@@ -1,38 +1,44 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Kamen, skare, papir</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="W3-vjezbe.css" />
 </head>
+
 <body>
 
-<h1>Kamen, škare, papir</h1>
-<div id="parent">
-    <div id="igrac1">
-        <div class="korisnici">Korisnik:</div>
-        <label id="izaberi" for="igra">Izaberi:</label>
-        <select id="igra" name="igra">
-            <option value="Kamen">Kamen</option>
-            <option value="Skare">Skare</option>
-            <option value="Papir">Papir</option>
-        </select>
-        <input id="submitBtn" type="submit" value="Igraj">
-        <img id="slike" src="kamen.png">
-    </div>
-    <div id="racunalo">
-     <div class="korisnici">Računalo:</div>
-        <p id="bacanje"></p>
-        <img id="racunalo-image" src="" />
-    </div>
-</div>
+    <h1>KAMEN SKARE PAPIR</h1>
+    <div id="parent">
+        <div id="igrac1">
+            <div class="korisnici">Korisnik:</div>
+            <label id="izaberi" for="igra">Izaberi:</label>
+            <select id="igra" name="igra">
+                <option value="Kamen">Kamen</option>
+                <option value="Skare">Skare</option>
+                <option value="Papir">Papir</option>
+            </select>
+            <input id="submitBtn" type="submit" value="Igraj">
+            <img id="slike" src="kamen.jpg">
+        </div>
 
-<div id="pobjednik">Pobjednik:
-    <p id="pobjednik"></p><br />
-    <img id="pobjednik-img" src="" />
- </div>
+        <div id="racunalo">
+            <div class="korisnici">Računalo:</div>
+            <p id="bacanje"></p>
+            <img id="racunalo-image" src="" />
+        </div>
+    </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <div id="pobjednik-div">
+        <p id="pobjednik"></p>
+        <img id="pobjednik-img" src="" alt="" />
+    </div>
+
+    <div id="rezultat"></div>
+    <script type="text/javascript" src="W3-vjezbe.js"></script>
 </body>
+
 </html>
