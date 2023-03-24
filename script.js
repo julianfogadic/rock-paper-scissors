@@ -19,6 +19,8 @@ function pobjednik(izborKorisnik, izborRacunalo) {
         return "Racunalo";
     }
 };
+
+
 document.getElementById("racunalo-image").style.display = "none";
 document.getElementById("pobjednik-img").style.display = "none";
 
@@ -30,77 +32,61 @@ const imgEl = document.getElementById("slike");
 
 document.getElementById("submitBtn").innerHTML = "Igraj";
 
-let userWins = 0;
-let computerWins = 0;
-let round = 1;
-
 izborKorisnikEl.addEventListener("change", function () {
     const selectedValue = izborKorisnikEl.value;
     if (selectedValue === "Kamen") {
-        imgEl.src = "kamen.png";
+        imgEl.src = "kamen.jpg";
     } else if (selectedValue === "Skare") {
-        imgEl.src = "skare.png";
+        imgEl.src = "skare.jpg";
     } else if (selectedValue === "Papir") {
-        imgEl.src = "papir.png"
+        imgEl.src = "papir.jpg"
     }
 });
-
 const izborRacunalo = random();
-bacanjeEl.textContent = `Racunalo baca: ${izborRacunalo}`;
-const racunaloImageEl = document.getElementById("racunalo-image");
-const pobjednikImageEl = document.getElementById("pobjednik-img");
+
+let round = 1;
+let userWins = 0;
+let computerWins = 0;
 
 submitBtn.addEventListener("click", function () {
-    const izborKorisnik = izborKorisnikEl.value;
-    const izborRacunalo = random();
-    racunaloImageEl.style.display = "block";
-    bacanjeEl.textContent = `Racunalo: ${izborRacunalo}`;
-    
-    if (izborRacunalo === "Kamen") {
-        racunaloImageEl.src = "kamen.png";
-    } else if (izborRacunalo === "Skare") {
-        racunaloImageEl.src = "skare.png";
-    } else if (izborRacunalo === "Papir") {
-        racunaloImageEl.src = "papir.png";
-    }
+    if (userWins < 3 && computerWins < 3) {
+        const izborKorisnik = izborKorisnikEl.value;
+        const izborRacunalo = random();
+        const racunaloImageEl = document.getElementById("racunalo-image");
+        const pobjednikImageEl = document.getElementById("pobjednik-img");
+        racunaloImageEl.style.display = "block";
+        bacanjeEl.textContent = `${izborRacunalo}`;
 
-    pobjednikEl.textContent = `Pobjednik: ${pobjednik(izborKorisnik, izborRacunalo)}`;
-    if (pobjednik === "Korisnik") {
-        pobjednikImageEl.src = "user.png";
-    } else if (pobjednik === "Racunalo") {
-        pobjednikImageEl.src = "computer.jpg";
-    }
-
-    pobjednikImageEl.style.display = "block";
-
-    numRounds++;
-    const winner = pobjednik(izborKorisnik, izborRacunalo);
-    if (winner === "Korisnik") {
-        userWins++;
-    } else if (winner === "Racunalo") {
-        computerWins++;
-    }
-    const rundaEl = document.getElementById("runda");
-    rundaEl.textContent = `Runda ${numRounds}: ${winner} wins!`;
-
-    if (numRounds === 3) {
-        // Display the winner of the game
-        let gameWinner;
-        if (userScore > computerScore) {
-            gameWinner = "Korisnik";
-        } else if (computerScore > userScore) {
-            gameWinner = "Racunalo";
-        } else {
-            gameWinner = "Nerijeseno";
+        if (izborRacunalo === "Kamen") {
+            racunaloImageEl.src = "kamen.jpg";
+        } else if (izborRacunalo === "Skare") {
+            racunaloImageEl.src = "skare.jpg";
+        } else if (izborRacunalo === "Papir") {
+            racunaloImageEl.src = "papir.jpg";
         }
-        pobjednikEl.textContent = `Game over! ${gameWinner} wins the game!`;
 
-        // Disable the submit button
-        submitBtn.disabled = true;
+        let winner = pobjednik(izborKorisnik, izborRacunalo);
+        pobjednikImageEl.style.display = "block";
+        pobjednikEl.textContent = `Pobjednik: ${winner}`;
+
+        if (winner === "Korisnik") {
+            pobjednikImageEl.src = "user.png";
+            userWins++;
+        } else if (winner === "Racunalo") {
+            pobjednikImageEl.src = "computer.jpg";
+            computerWins++;
+        } else {
+            pobjednikImageEl.src = "tie.gif";
+        }
+
+        const rezultatEl = document.getElementById("rezultat");
+        rezultatEl.innerHTML += `<br>Round ${round}: Korisnik - Racunalo  ${userWins}:${computerWins}`;
+
+        round++;
+        if (userWins === 3 || computerWins === 3) {
+            submitBtn.disabled = true;
+            pobjednikEl.textContent = (userWins === 3) ? "Bravo! Pobijedio si! :)" : "Nazalost, izgubio si :(";
+            pobjednikImageEl.src = (userWins === 3) ? "user.png" : "computer.jpg";
+        }
     }
-
 });
-
-let selectElement = document.getElementById("igra");
-selectElement.value = izborKorisnikEl;
-
