@@ -1,59 +1,59 @@
 ﻿body {
-    background-image: url("background.jpg");
+    background-image: url("https://img.freepik.com/free-photo/fingers-pointing-wall-marsh-color_23-2148222615.jpg?w=1380&t=st=1678364648~exp=1678365248~hmac=47b957dd13018166e100a238e75d1f02b93a40a87b9d1df9b3c8284573858203");
     background-size: cover;
-    color: white;
+    font-family: cursive;
 }
 
 h1 {
     text-align: center;
     font-size: 40px;
     padding: 10px;
-    font-weight: bold;
-    background-color: grey;
 }
 
 #parent {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 75px;
+    justify-content: center;
 }
 
 .korisnici {
     text-align: center;
     font-size: 30px;
-    padding:15px;
+    padding: 15px;
+
 }
 
-#izaberi, #bacanje {
+#izaberi,
+#bacanje {
     font-size: 24px;
     text-align: center;
 }
 
-#pobjednik {
-    text-align: center;
-
-}
 
 #igra {
+    font-family: cursive;
+    background-color: inherit;
     font-size: 18px;
     width: 100px;
     align-self: center;
+    color: black;
     margin: 10px;
 }
 
-#pobjednik {
+#pobjednik-div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 30px;
     padding: 15px;
+    width: 400px;
+    margin-inline: auto;
 }
 
 img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     place-self: center;
     padding: 20px;
 }
@@ -62,18 +62,29 @@ img {
     display: flex;
     flex-direction: column;
     border: solid;
-    background-color: rgba(0, 0, 0, 0.5)
+    padding: 15px;
+    background-color: lightgray;
 }
 
 #submitBtn {
     width: 70px;
     align-self: center;
+    background-color: inherit;
 }
 
 #racunalo {
     display: flex;
     flex-direction: column;
-    border:solid;
-    background-color: rgba(0, 0, 0, 0.5)
+    border: solid;
+    padding: 15px;
+    background-color: lightgray;
 }
 
+#rezultat {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 350px;
+    margin-inline: auto;
+    color: seashell;
+}
