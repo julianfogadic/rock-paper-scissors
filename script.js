@@ -35,11 +35,11 @@ document.getElementById("submitBtn").innerHTML = "Igraj";
 izborKorisnikEl.addEventListener("change", function () {
     const selectedValue = izborKorisnikEl.value;
     if (selectedValue === "Kamen") {
-        imgEl.src = "kamen.jpg";
+        imgEl.src = "kamen.png";
     } else if (selectedValue === "Skare") {
-        imgEl.src = "skare.jpg";
+        imgEl.src = "skare.png";
     } else if (selectedValue === "Papir") {
-        imgEl.src = "papir.jpg"
+        imgEl.src = "papir.png"
     }
 });
 const izborRacunalo = random();
@@ -58,11 +58,11 @@ submitBtn.addEventListener("click", function () {
         bacanjeEl.textContent = `${izborRacunalo}`;
 
         if (izborRacunalo === "Kamen") {
-            racunaloImageEl.src = "kamen.jpg";
+            racunaloImageEl.src = "kamen.png";
         } else if (izborRacunalo === "Skare") {
-            racunaloImageEl.src = "skare.jpg";
+            racunaloImageEl.src = "skare.png";
         } else if (izborRacunalo === "Papir") {
-            racunaloImageEl.src = "papir.jpg";
+            racunaloImageEl.src = "papir.png";
         }
 
         let winner = pobjednik(izborKorisnik, izborRacunalo);

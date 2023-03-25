@@ -1,13 +1,14 @@
 ﻿body {
-    background-image: url("https://img.freepik.com/free-photo/fingers-pointing-wall-marsh-color_23-2148222615.jpg?w=1380&t=st=1678364648~exp=1678365248~hmac=47b957dd13018166e100a238e75d1f02b93a40a87b9d1df9b3c8284573858203");
+    background-image: url("background.jpg");
     background-size: cover;
-    font-family: cursive;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 50px;
+    padding: 20px;
 }
 
 #parent {
@@ -18,36 +19,34 @@ h1 {
 
 .korisnici {
     text-align: center;
-    font-size: 30px;
-    padding: 15px;
+    font-size: 40px;
+    padding: 25px;
 
 }
 
 #izaberi,
 #bacanje {
-    font-size: 24px;
+    font-size: 34px;
     text-align: center;
 }
 
-
 #igra {
-    font-family: cursive;
+    font-family: sans;
     background-color: inherit;
-    font-size: 18px;
+    font-size: 20px;
     width: 100px;
     align-self: center;
     color: black;
-    margin: 10px;
-}
+    margin: 20px;
+    }
 
 #pobjednik-div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 30px;
-    padding: 15px;
-    width: 400px;
+    font-size: 40px;
+    padding: 25px;
     margin-inline: auto;
 }
 
@@ -55,15 +54,14 @@ img {
     height: 100px;
     width: 100px;
     place-self: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 #igrac1 {
     display: flex;
     flex-direction: column;
     border: solid;
-    padding: 15px;
-    background-color: lightgray;
+    padding: 25px;
 }
 
 #submitBtn {
@@ -77,14 +75,13 @@ img {
     flex-direction: column;
     border: solid;
     padding: 15px;
-    background-color: lightgray;
+    
 }
 
 #rezultat {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding-bottom: 30px;
-    width: 350px;
     margin-inline: auto;
     color: seashell;
 }
